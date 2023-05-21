@@ -1,0 +1,52 @@
+-----------------------------------------------TP N°1 ESCRITURA POR MEDIOS-------------------------------------------------------------------------------------
+Link del TP en arduino: https://www.tinkercad.com/things/b7RPFvYB15y?sharecode=FnPKp7DN9hgZpUsxdWTs8Lw8sU5Q6FdstXoxMuZRtM8
+
+Este tp fue realizado en tinkercad con elementos electronicos:
+
+- Arduino uo R3
+- 3 LED RGB
+- 3 Resistencias de 220 Amperios 
+
+
+
+
+---Codigo del tp:
+
+#define LEDR 13
+#define LEDAM 12
+#define LEDRM 11
+#define LEDAC 10
+#define LEDVC 9
+
+void setup()
+{
+  pinMode(LEDR, OUTPUT);
+  pinMode(LEDAM, OUTPUT);
+  pinMode (LEDRM, OUTPUT);
+  pinMode (LEDAC, OUTPUT);
+  pinMode (LEDVC, OUTPUT);
+  
+}
+
+void loop()
+{
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000); 
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000); 
+  
+  digitalWrite(LEDAM, HIGH);
+  digitalWrite(LEDRM,HIGH);
+  delay(1000); 
+  digitalWrite(LEDRM,LOW);
+  digitalWrite(LEDAM, LOW);
+  delay(1000); 
+  
+  digitalWrite(LEDAC, HIGH);
+  digitalWrite(LEDVC, HIGH);
+  delay(1000);
+  digitalWrite(LEDAC, LOW);
+  digitalWrite(LEDVC, LOW);
+  delay(1000);
+  
+}
